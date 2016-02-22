@@ -22,7 +22,6 @@ public class TreeJTest {
 	
 	@BeforeClass
 	public static void SetUpBeforeClass (){
-		
 	}
 	
 	@Test
@@ -40,5 +39,17 @@ public class TreeJTest {
 		String expected = "123";
 		assertEquals(expected, bst.traversal("in"));
 	}
-
+	
+	@Test
+	public void preOrderTest() {
+		String expected = "213";
+		assertEquals(expected, bst.traversal("pre"));
+	}
+	
+	@Test
+	public void postOrderTest() {
+		String expected = "132";
+		assertEquals(expected, bst.traversal("post"));
+	}
+	
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class BinarySearchTree {
 	public TreeNode rootNode;
-	private String travelResult;;
+	private String travelResult;
 
 	public void insertNode(int n) {
 		if (alreadyExistValue(n))
